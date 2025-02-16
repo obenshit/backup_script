@@ -25,7 +25,7 @@ TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
 FILENAME=$(basename "$FILE")
 
 #Make the file with the new name (with the timestamp)
-BACKUP_FILE="backup/FILE_${TIMESTAMP}_${FILENAME}"
+BACKUP_FILE="backup/${TIMESTAMP}_${FILENAME}"
 
 #Make Backup
 cp "$FILE" "$BACKUP_FILE"
